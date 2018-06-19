@@ -1,12 +1,28 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Your Title Goes Here</title>
+    <title>Audio Engineering Ideas</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Design Your Site Here! -->
+      <h1> Nice beats, Awesome sounds... </h1>
+  <p>
+    Audio Engineering is a job that requires some skill. Thinking of ideas can be tough. To start try this technique: Think of different atmospheres when coming up with sounds to create musical pieces.
+    Ocean, Sky, Temple, etc...
+  </p>
+  <h3> Press the button for a secret message </h3>
+  <input id="myInput" value="here is the button...">
+  <button id="sctBtn" onclick="javascript:alert('Use tools to get out and make some music. When you think of ocean think of calming wave sounds and compose a piece with that in mind!')">button</button>
+  <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keydown", function(event)
+  {
+    event.preventDefault();
+    if (event.keyCode == 13){
+      document.getElementById("sctBtn").click();
+    }
+  });
+  </script>
   </body>
 </html>
